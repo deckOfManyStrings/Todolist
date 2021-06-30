@@ -8,15 +8,20 @@
 
 
 
-<h1>It's a <%= kindOfDay%>!</h1>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum, dolor vitae fermentum rhoncus, orci
-    est eleifend orci, et ornare libero ligula non diam. Cras sit amet mauris ut erat accumsan laoreet interdum et
-    lectus. Quisque gravida, augue eget mollis vulputate, ligula ipsum tempus leo, quis rhoncus lorem arcu ac diam.
-    Vestibulum ut tincidunt risus. Ut blandit iaculis varius. In risus elit, tincidunt at ante in, maximus imperdiet
-    neque. Integer finibus convallis dolor, sit amet feugiat dolor gravida nec.
+<h1><%= kindOfDay%>!</h1>
 
+<ul>
 
-</p>
+    <%for (var i=0; i< newListItems.length; i++){ %>
+    <li><%= newListItems[i] %></li>
+    <% }%>
+
+</ul>
+
+<form class="" action="/" method="post">
+    <input type="text" name="newItem">
+    <button type="submit" name="button">Add</button>
+</form>
+
 </body>
 </html>
